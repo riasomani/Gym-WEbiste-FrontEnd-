@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fight to Fit</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?
+family=Lato:wght@900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* CSS Reset */
+    body{
+        margin: 0px;
+        padding: 0px;
+        background: url('img/2.png');
+        background-color: black;
+        color: rgb(255, 230, 184);
+        font-family: 'Lato', sans-serif;
+    }
+    
+
+    .left{
+        /* border: 2px solid rgb(204, 122, 0); */
+        position: absolute;
+        text-align: center;
+        font-size: 18px;
+        font-family: 'Spartan', sans-serif; 
+        padding: 10px;
+        left: 34px;
+        top: 4px;
+        display: inline-block;
+        line-height: 23px;
+        color: white;
+        text-decoration: none;
+        /* background-color: black; */
+    }
+
+    .left img{
+        width: 80px;
+        /* vertical-align: 10px; */
+        filter: invert(100%);
+    }
+
+    .mid{
+        /* border: 2px solid rgb(28, 166, 221); */
+        display: block;
+        margin: 20px auto;
+        width: 50%;
+        text-align: center;
+        color: rgb(220, 245, 255);
+        /* background-color:  black; */
+    }
+
+    .right{
+        /* border: 2px solid rgb(253, 179, 69); */
+        right: 34px;
+        top: 30px;
+        position: absolute;
+        display: inline-block;
+        /* background-color: black; */
+    }
+
+    .navbar{
+        display: inline-block;
+    }
+
+    .navbar li{
+        display: inline-block;
+        font-size: 18px;
+        font-family: 'Lato', sans-serif;
+    }
+
+    .navbar li a{
+        color: rgb(220, 245, 255);
+        text-decoration: none;
+        padding: 20px;
+    }
+
+    .navbar li a:hover, .navbar li a.active{
+        text-decoration: underline;
+        color: rgb(223, 139, 13) ;
+    }
+        
+    .btn{
+        margin: 0px 5px;
+        padding: 6px 8px;
+        background-color: black;
+        color: rgb(255, 230, 184);
+        border-color: rgb(155, 134, 83);
+        border-radius: 5px;
+        cursor: pointer;
+        font-family: 'Lato', sans-serif;
+    }
+    
+    .btn:hover{
+        color: rgb(253, 179, 69);
+    }
+
+    .container{
+        border: 2px solid rgb(223, 88, 10);
+        margin: 60px 34px;
+        padding: 10px 10px;
+        width: 20%;
+        border-radius: 2px;
+        /* background-color: rgb(0, 0, 36); */
+    }
+
+    .formgroup input{
+        text-align: center;
+        display: block;
+        width: 170px;
+        padding: 5px;
+        margin: 5px auto;
+        border-radius: 5px;
+        font-size: 16px;
+        font-family: 'Lato', sans-serif;
+        border-color: rgb(39, 133, 177);
+        background-color: rgb(0, 54, 75);
+        color: rgb(106, 171, 211);
+    }
+
+    .container h1{
+        text-align: center;
+    }
+
+    .container button{
+        display: block;
+        width: 30%;
+        margin: 25px auto;
+        font-family:'Lato', sans-serif;
+        font-size: 13px;
+        border-color: rgb(141, 52, 0);
+        color: rgb(209, 108, 83);
+    }
+
+</style>
+<body>
+    <header class="header">
+        <!-- Left box for logo  -->
+        <div class="left">
+            <img src="img/3.jpg" alt="">
+            <div>FIGHT TO FIT</div>
+        </div>
+        
+        <!-- Mid box for Nav Box -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a><li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Plans/Blogs</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- Right box for buttons -->
+        <div class="right">
+            <button class="btn">Call us</button>
+            <button class="btn">Email us</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Join now!</h1>
+        <form action="noaction.php">
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Name">
+                <input type="text" name="" placeholder="Email ID">
+                <input type="text" name="" placeholder="Contact Number">
+                <input type="text" name="" placeholder="Gender">
+                <input type="text" name="" placeholder="Age">
+                <input type="text" name="" placeholder="City">
+            </div>
+            <button class="btn">SUMBIT</button>
+        </form>
+    </div>
+
+</body>
+</html>
